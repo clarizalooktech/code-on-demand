@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Code On Demand</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--=====Navigation Section====-->
+        <div class="container-fluid">
+            <a href="#index.html" class="navbar-brand">Technology News Inc.</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#what-is-cod" class="nav-item nav-link">What is COD</a>
+                    <a href="#history-of-cod" class="nav-item nav-link">History</a>
+                    <a href="#about-author" class="nav-item nav-link">About the Author</a>
+                </div>
+            </div>
+        </div>
+    </nav> <!--=====End Navigation Section====-->
+
+
+    <div class="container">
+
+        <!-- Banner -->
+        <div class="p-5 my-4 bg-light rounded-3 header-banner">
+            <h1>Code On Demand</h1> <mark>How Interactive Websites Are Made</mark>
+            <p class="lead">In this generation of the internet, web applications have become popular. These applications are created for a wide variety of purposes by individuals and organizations. Having said that, the concept of code on demand has also emerged. In this site, we will learn more about what is code on demand, what makes it a hot topic, a bit of its history, and it's benefits and fallbacks.</p>
+            <p><a href="#what-is-cod" class="btn btn-success btn-lg">Get started</a></p>
+        </div>
+        <!-- END Banner -->
+
+        <div class="row">
+            <section id="what-is-cod">
+                <div class="row">
+                    <div class="col-6 col-md-6 col-lg-6 col-xl-6"> 
+                        <h2>What is Code On Demand? </h2>
+                        <p>
+                            Today, the world wide web has been widely used by many people around the globe. Users pay their bills, shop online or book a service with the use of the internet with desktop and mobile phone applications at a faster rate of response time. If we look at it, the technology behind has improved rapidly to handle the process a single or multiple transactions as it is using a distributed system. This type of systems refer to a cluster of computers (and can be accessed online) that works altogether and produce an output or a series of outputs to the end user. </p>
+                        <p>
+                            In the paradigm of distributed computing, the technology of code on demand is being utilized often. This is when a user from a client machine performs an action e.g. clicks a button, and creates a request to a server machine and then the server machine performs the request using an executable program and response back to the client.
+                        </p>
+                        <p>
+                            A few of the widely-used instances of the code on demand models are web are Java Applets, ActionScript that is used in Flash Player, and JavaScript.
+                        </p>
+                    </div>
+
+                    <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="text-center">
+                            <img id="myImg2" class="img-responsive modal-target card__image" src="assets/1-code-on-demand.png" title="Reference: https://www.researchgate.net/figure/1-Code-on-Demand-COD_fig5_228590527" alt="Reference: https://www.researchgate.net/figure/1-Code-on-Demand-COD_fig5_228590527">
+
+                            <div class="figure-caption text-center">
+                                <a href="https://www.researchgate.net/figure/1-Code-on-Demand-COD_fig5_228590527" class="link-secondary">Reference: Researchgate.net</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <p>In the previous generations of how internet is being used, websites are just mostly rendering documents that are static in which the web client and server is the browser itself. However since then, it had evolved to consume REST (representational state transfer) application user interfaces technologies in which a browser grabs and displays the initial state of the HTML document amd provides support to "script" tags found within the document so that an executable software application can be loaded or rendered on-demand .</p>
+                </div>
+                
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <br>
+                    <h4>What Makes a COD System</h4>
+                </div>
+                
+                <div class="container">
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="assets/2client-server-model.png" alt="client-server-model" class="modal-target card__image" width="600">
+                            <div class="figure-caption text-center">
+                                <a href="https://www.seguetech.com/client-server-side-code/" class="link-secondary">Client Server Model</a>
+                            </div>
+                        </div>
+                        <div class="card__body">
+                            <span class="tag tag-blue">Model</span>
+                            <h4>Client-Server</h4>
+                            <p>A COD system must be composed of two components: clients and servers.</p>
+                            
+                            <p>Servers are the location where resources are saved that client machine may want to use. For example, a server has a list of sales data (.e.g. a resource) and a client device would like to view the list of sales per day and their totals in a graph.</p>
+                            
+                            <p>The difference between the two are obviously seen. The server machine handles the storage of data, computations, business rules and rospnses to applications while the client takes care of the user interactions.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="assets/3-stateless.png" alt="stateless" class="modal-target card__image" width="600">
+                            <div class="figure-caption text-center"><a href="https://www.oreilly.com/library/view/hands-on-restful-api/9781788992664/f618d9e6-1ca9-4177-a464-69ef1eec133a.xhtml" class="link-secondary">Stateless Model</a></div>
+                        </div>
+                        
+                        <div class="card__body">
+                            <span class="tag tag-brown">Model</span>
+                            <h4>Statelessness</h4>
+                            <p>When client and server communicates, the state of information between the two remains on themselves.</p>
+
+                            <p>This simply refers that all data from the user machine's session is stored entirely on the client, and the server is totally not informed of. Whenever the client application generates an HTTP request, it put all data needed for the server side to satisfy the request</p>
+
+                            <p>The server will removes all data that were requested previously ny the client. If in a case that an information is crucial, this means that the client have to send that as a part of the current request.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="assets/4-caching.png" alt="Caching" class="modal-target card__image" width="600">
+                            <div class="figure-caption text-center">
+                                <a href="https://tech.ebayinc.com/engineering/caching-http-post-requests-and-responses/" class="link-secondary">Caching Model</a>
+                            </div>
+                        </div>
+                        <div class="card__body">
+                            <span class="tag tag-red">Model</span>
+                            <h4>Caching</h4>
+                            <p>The final composition of COD on the client-server interaction is that the information responses provided by the servers can be labeled as cacheable or non-cacheable. It usually involves temporarily keeping copies of files in a non-permanent location in the client or server machine that can be accessed rapidly. </p>
+
+                            <p>These two variations of caching can effectively reduce the number of interactions between two systems, which helps the request and responses process perform better. At least from the end user's perspective</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <br>
+                    <h3>Examples of Code on Demand</h3>
+                    <br>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+                        <div class="examples-button">
+                            <p><a href="#java-applets" class="btn btn-success">Java Applets &raquo;</a></p>
+                        </div>
+                    </div>
+        
+                    <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+                        <div class="examples-button">
+                            <p><a href="#actionscript" class="btn btn-success">ActionScript &raquo;</a></p>
+                        </div>  
+                    </div>
+        
+                    <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+                    
+                        <div class="examples-button">
+                            <p><a href="#java-script" class="btn btn-success">JavaScript &raquo;</a></p>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <div>
+                    <section id="java-applets" class="tab-content"> <!--Start Java Applets Section-->
+                        <div class="java-applets section tab-rows" >
+                            <h4 class="text-center"> Java applets</h4>
+                            <div class="row">
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <p>A java applet is a tiny program made from java that can execute in any java compiler-interprer enabled interfaces such as browers or an applet viewer program. It provides interactive functions to the applications on the web as browsers being executed. They are tiny yet portable programs inserted in HTML pages and automatically put into effect when the pages are loaded. </p>
+                                    <p>Applets can run on multi-platform operating systems independently. It is loaded rapidly on the browser and can fully run on the client computer without communicating to the server.</p>
+                                    <p>Java applets are secure as it is made from java program and only trusted and registered apps to APS (Applet Security Manager) can be used.</p>
+                                    <b>Example Uses</b>
+                                    <ul>
+                                        <li>Utilitiy Programs: simple calculators, digital clock app, simple spreadsheets, online calendar</li>
+                                        <li>Text Moving Animations: color change, morphing text, text flash effects</li>
+                                        <li>Music Processing: online piano, digital radio buttons</li>
+                                        <li>Interactive Games: Crossword puzzles, Minesweeper, Solitaire Card Game</li>
+                                        <li>Etc: Graph and charts, digital simulators for flights</li>
+                                    </ul>
+
+                                    <b>Limitations</b>
+                                    <ul>
+                                        <li>A few mobile browsers from iOS and Android devices does not support applets</li>
+                                        <li>Not able to capture streaming data from a browser</li>
+                                        <li>Not flexible enought to capture events triggered that is not inside applet application</li>
+                                        <li>Cannot execute and modify internal softwares on a client computer</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="image-tabs">
+                                        <img src="assets/6-java-applet.jpg" alt="Sample Java Applet Game" class="modal-target"> 
+                                        <div class="figure-caption text-center">
+                                            <a href="https://www.academia.edu/41112889/Java_applets" class="link-secondary">About Applets.</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="image-tabs">
+                                        <img src="assets/7-java-applet-snake-game.png" alt="Sample Java Applet Game" class="modal-target"> 
+                                        <div class="figure-caption text-center">
+                                            <a href="http://www.thecodenote.com/2017/04/developing-minesweeper-using-java.html" class="link-secondary">Minesweeper, an example applet game.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </section> <!--End Java Applets Section-->
+
+                    <section id="actionscript" class="tab-content"> <!--Start Actionscript Section-->
+                        <div class="actionscript section tab-rows" >
+                            <h4 class="text-center"> Actionscript</h4>
+                            <div class="row">
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <p>ActionScript is a scripting language that was created to offer interactivity on Adobe's Flash Player software. It originated from Macromedia Inc. then later the company was bought by Adobe Systems. It is developed fundamentally to generate most kinds of fully interactional applications including animated websites and mutimedia device games that are in the SWF file forms.</p>
+
+                                    <p>ActionScript enables the developers add complexity on the immersiveness of the audio and visual effects of an application. It makes it possible to generate user interface environments that can accept user's action and respond through a click or keyboard strokes. This language is based on the event action by the user. Actionscript uses Flash Integrated Development Environment (IDE) where a developer can generate or update FLA file types. </p> 
+
+                                    <p>ActionScript works similarly to it's cousin, JavaScript, however it is created purely to run on applications with Flash player installed.</p>
+
+                                    <b>Advantages </b>
+                                    <ul>
+                                        <li>Object Oriented Language: Has many libraries that supports a wide variety of applications and online games for animations, rendering features, etc.</li>
+                                        <li>High-quality of video and animation contents</li>
+                                        <li>Allows developers to process vector graphics or muti-dimension animations</li>
+                                        <li>Enables users to upload content texts and visuals to a site and also can be progressively download files</li>
+                                    </ul>
+
+                                    <b>Limitations</b>
+                                    <ul>
+                                        <li>Uses a lot of CPU power due to its lack of support to put it on a virtual machine</li>
+                                        <li>Flash-based applications are prone to crashing</li>
+                                        <li>To much dependency to flash-player enabled browsers which makes it less universal</li>
+                                        <li>Not indexable by search engines.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="image-tabs">
+                                        <img src="assets/11-super-mario-flash.jpg" alt="Sample Flash Player Game" class="modal-target"> 
+                                        <div class="figure-caption text-center">Super Mario Flash Game</div>
+                                    </div>
+                                    <div class="image-tabs">
+                                        <img src="assets/12-adobe-flash-player.png" alt="Flash Player" class="modal-target"> 
+                                        <div class="figure-caption text-center">Adobe Flash Player.</div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </section> <!--End ActionScript Section-->
+                    
+                    <section id="java-script" class="tab-content"> <!--Start What is Javascript Section-->
+                        <div class="java-script section tab-rows" >
+                            <h4 class="text-center"> Java Script</h4>
+                            <div class="row">
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <p>JavaScript is a programming language that mostly uses scripts that creates interactivity on web pages. It works together with HTML and CSS which are providing the site structure and the styling to the website pages. Javascript provides behaviour on elements of the pages in a way a user is able to take action. A few of the examples of Javascript applications include online forms, image modal effects, button click effects, interactive games and many more.  </p>
+
+                                    <p>JavaScript was initially developed to primarily serve website applications and online browsers. However, it evolved to be used on back-end servers, and even to control hardware units. Here's a few of the list that Javascript can do:</p>
+
+                                    <b>Example Uses</b>
+                                    <ul>
+                                        <li>Adding events to elements of web pages</li>
+                                        <li>Building website and responsive appllications</li>
+                                        <li>Setting up website servers and other server applications</li>
+                                        <li>Online interactive games development</li>
+                                    </ul>
+
+                                    <b>Advantages</b>
+                                    <ul>
+                                        <li>It is build as a native standard to browsers</li>
+                                        <li>Easy to learn for developers</li>
+                                        <li>Extended Functionality</li>
+                                        <li>Fast Response</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="image-tabs"> 
+                                        <img src="assets/13.1-nodejs.png" alt="node js" class="modal-target"> 
+                                        <div class="figure-caption text-center">Node.js Framework</div>
+                                    </div>
+                                    <div class="image-tabs"> 
+                                        <img src="assets/13-super-chrono-portal-maker.png" alt="Super mario portal maker" class="modal-target"> 
+                                        <div class="figure-caption text-center">Super mario portal maker, an example javascript game.</div>
+                                    </div>
+                                </div>
+                               
+
+                                <div class="col-12 col-md-12 col-lg-12 col-xl-12 justify-content-center">
+                                    <h3>AJAX</h3>
+                                    <p>Ajax refers to Asynchronous JavaScript and XML. This means that web applications can be developed and use this as a technique for better performance on loading elements such as HTML, XML, CSS, and Javascript altogether.</p>
+
+                                    <p>Ajax provides the ability to transfer data towards server and also get data from server in a form of sychronous distribution request. An example is filling up a form for information then click the submit button and then the user is able to see new output information on the screen. Information is coming from a server which is generated in real-time. </p>
+                              </div>
+                              
+                              <div class="col-12 col-md-12 col-lg-12 col-xl-12 weather-box justify-content-center">
+                                  <section class="top-banner">
+                                      <div class="container ">
+                                          <p class="heading">Simple Weather App</p>
+                                          <form>
+                                              <input type="text" placeholder="Search for a city" autofocus>
+                                              <button type="submit">SUBMIT</button>
+                                              <span class="msg"></span>
+                                            </form>
+                                        </div>
+                                    </section>
+                                    <section class="ajax-section">
+                                        <div class="container">
+                                            <ul class="cities"></ul>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </section> <!--End What is Javascript Section-->
+                </div>
+
+            </section>
+            
+            <section id="history-of-cod"> <!--===START SECTION HISTORY OF COD===-->
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <br>
+                    <h2>History of COD</h2>
+                </div>
+        
+                <div class="history gray-bg">
+                    <div class="timeline">
+                        <div class="container-tab left">
+                            <div class="content">
+                                <h2>Present</h2>
+                                <p>Since 2019 to present day, JavaScript has remained on top of the most popular programming language around the globe.</p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="container-tab right">
+                            <div class="content">
+                                <h2>2020</h2>
+                                <p>ActionScript's Flash player support was halted by Adobe Systems Inc.</p>
+                                <ul>
+                                    <li class="link-secondary">Reason behind halting flash player support was the growing security risk of flash player targetted by hackers which Adobe was not able to fix.</li>
+                                    <li class="link-secondary">Oracle released a version of Java Development Kit 9 that removed the Java plug in for browsers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="container-tab left">
+                            <div class="content">
+                                <h2>2017</h2>
+                                <p>Java Applets was finally deprecated.</p>
+                                <ul>
+                                    <li class="link-secondary">Internet Explorer was the only one left supporting Applets</li>
+                                    <li class="link-secondary">Oracle released a version of Java Development Kit 9 that removed the Java plug in for browsers.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="container-tab right">
+                            <div class="content">
+                                <h2>2013</h2>
+                                <p>Top website browsers have started to gradually eliminate Java Applets. Some reasons of applet's downfall are below:</p>
+                                <ul>
+                                    <li class="link-secondary">Applets requires permission and had issues to access file systems. </li>
+                                    <li class="link-secondary">It requires a high level of security for exploits if given access to permission. </li>
+                                    <li class="link-secondary">Hard to inspect an applet code.</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="container-tab left">
+                            <div class="content">
+                                <h2>2007</h2>
+                                <p>Apple Inc. announced to not support any Flash player-based animations which greatly affect ActionScript's popularity.</p>
+                
+                            </div>
+                        </div>
+        
+                        <div class="container-tab right">
+                            <div class="content">
+                                <h2>2005</h2>
+                                <p>ActionScript's owner Macromedia was fully obtained by Adobe Systems Inc., a US software firm.</p>
+                                <p>Ajax (Asynchronous JavaScript and XML), a web development paradignm, was introduced that boosted the popularity of Javascript.</p>
+                                <ul>
+                                    <li class="link-secondary">With Ajax, users can interact with pages including updating elements without needing to reload the page. </li>
+                                    <li class="link-secondary">Ajax can also send and request data from the web server on the background asynchronously.</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="container-tab left">
+                            <div class="content">
+                                <h2>1998</h2>
+                                <p>Actionscript was born.</p>
+                                <ul>
+                                        <li class="link-secondary">Created by Macromedia Inc. which is also the developer of Macromedia Flash software.</li>
+                                        <li class="link-secondary">Idea behind ActionScript's development was to create immersive online video computer games and website applications that runs on Flash.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="container-tab right">
+                            <div class="content">
+                                <h2>1996</h2>
+                                <p>Netscape Communications announced Javascript as standard language for browsers through ECMA standardization. </p>
+                                <ul>
+                                    <li class="link-secondary">ECMA works as a body of industry standardization for information systems. </li>
+                                    <li class="link-secondary">During this time of announcement by Netscape, Javascript is used on 300,000 web pages.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="container-tab left">
+                            <div class="content">
+                                <h2>1995</h2>
+                                <p>Java Applets was first introduced.</p>
+                                <ul>
+                                    <li class="link-secondary">It was created by the developers of Java programming language at Sun Microsystems </li>
+                                    <li class="link-secondary">The idea started as a Java bytecode to running on browsers</li>
+                                    <li class="link-secondary">First few interactive effects on browsers were spinning molecules</li>
+                                    <li class="link-secondary">Marc Andersen, the owner of Netscape agreed on a deal to run Java programs on its browsersand Applet is one of the few.</li>
+                                </ul>
+            
+                                <p>JavaScript was also introduced.</p>
+                                <ul>
+                                    <li class="link-secondary">It was created by Brendan Eich, an american programmer, when he signed a contract with Netscape Communications. </li>
+                                    <li class="link-secondary">The idea was conceptualized by creating a Java-like language but more light weight, dynamic yet powerful to run on browsers and also easy to be used by newbie developers and designers.  </li>
+                                    <li class="link-secondary">Initially it was named "Mocha" but was changed to LiveScript.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!--===END OF SECTION HISTORY OF COD===-->
+
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                <br>
+                <h2>About the Author</h2>
+                <br>
+            </div>
+
+            <section class="section-author about-author-section gray-bg" id="about-author"> <!--===== START ABOUT AUTHOR SECTION===-->
+                <div class="container">
+                    <div class="row flex-row-reverse">
+                        <div class="col-6 col-md-6 col-lg-6 col-xl-6 author-tab">
+                            <div class="about-text go-to">
+                                <h3 class="dark-color">About Me</h3>
+                                <h6 class="theme-color lead">A DevOps &amp; Data Engineer based in Perth</h6>
+                                <p>Clariza Look is a former digital marketing and web analytics specialist turned into a DevOps Data Engineer. </p>
+                                <p>She has found fascination with solving problems relating to information extraction, preprocessing, ingestion and integration, data analysis, security and interface development. </p>
+                                <p>As a specialist that have worked in both marketing  and information technology fields, her aim as a consultant is to help organizations achieve their data strategy and digital transformation goals by working with teams to create clear and highly actionable data design and management solutions, then guide them thouroughly on implementing the strategies.</p>
+                                <div class="row about-list">
+                                    <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="media">
+                                            <label>Email:</label>
+                                            <p>contact@clarizalook.com</p>
+                                        </div>
+                                        <div class="media">
+                                            <label>Phone:</label>
+                                            <p>+61 403 239 132</p>
+                                        </div>
+                                        <div class="media">
+                                            <label>Linkedin</label>
+                                            <p>https://www.linkedin.com/in/clarizalook/</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="media">
+                                            <label>Address</label>
+                                            <p>Perth, WA</p>
+                                        </div>
+                                        <div class="media">
+                                            <label>Github</label>
+                                            <p>https://github.com/clarizalooktech</p>
+                                        </div>
+                                        
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="about-avatar">
+                                <img id="myImg" src="assets/clariza_look_handspocket.jpg" title="Clariza Look" alt="Clariza Look">
+                            </div>
+                        </div>
+                    </div> <!--ENd of row flex-row-reverse-->
+
+                    <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                        <div class="skills-button">
+                            <p><a href="#tech-skills" class="btn btn-success">Tech Skills &raquo;</a></p>
+                        </div>
+                    </div>
+            
+                    <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+                        <div class="skills-button">
+                            <p><a href="#education" class="btn btn-success">Education &raquo;</a></p>
+                        </div>  
+                    </div>
+                    <div class="col-3 col-md-3 col-lg-3 col-xl-3">
+
+                        <div class="skills-button">
+                            <p><a href="#experience" class="btn btn-success">Experience &raquo;</a></p>
+                        </div>
+                    </div>
+        
+                
+                </div>
+                <div>
+                    <section id="tech-skills" class="skills-content"> <!--======Techskills SECTION======-->
+                        <div class="row tech-skills tab-rows text-center justify-content-center" >
+                            <h4 class="text-center"> Tech Skills</h4>
+                            <div class="col-2 col-md-2 col-lg-2 col-xl-2 py-3">
+                                <h5>Concepts</h5>
+                                <p class="figure-caption">Agile & Scrum</p>
+                                <p class="figure-caption">Data Architectures</p>
+                                <p class="figure-caption">Object Oriented Programming</p>
+                                <p class="figure-caption">Microservices Architecture</p>
+                                <p class="figure-caption">CI-CD</p>
+                            </div>
+                            <div class="col-2 col-md-2 col-lg-2 col-xl-2 py-3">
+                                <h5>Languages</h5>
+                                <p class="figure-caption">Python Functional Programming</p>
+                                <p class="figure-caption">SQL/ NoSQL/ PostGres</p>
+                                <p class="figure-caption">Javascript</p>
+                                <p class="figure-caption">HTML/CSS</p>
+                                <p class="figure-caption">Bash/ Shell Scripting</p>
+                                <p class="figure-caption">Java</p>
+                            </div>
+                            <div class="col-2 col-md-2 col-lg-2 col-xl-2 py-3">
+                                <h5>Frameworks</h5>
+                                <p class="figure-caption">Flask / Django</p>
+                                <p class="figure-caption">Apache Spark / Hadoop</p>
+                                <p class="figure-caption">Wordpress</p>
+                            </div>
+                            <div class="col-2 col-md-2 col-lg-2 col-xl-2 py-3">
+                                <h5>IDE & Viz Tools</h5>
+                                <p class="figure-caption">Visual Studio</p>
+                                <p class="figure-caption">Microsoft SSMS /SSIS</p>
+                                <p class="figure-caption">Tableau / Power BI</p>
+
+                            </div>
+                            <div class="col-2 col-md-2 col-lg-2 col-xl-2 py-3">
+                                <h5>Platforms</h5>
+                                <p class="figure-caption">Amazon Web Services (Fargate, Lambda, SNS)</p>
+                                <p class="figure-caption">Microsoft Azure (Data Lake, Synapse)</p>
+                                <p class="figure-caption">Docker / Kubernetes</p>
+                                <p class="figure-caption">Git-Github</p>
+                            </div>
+                
+
+            
+                        </div>
+                    </section><!--======END Techskills SECTION======-->
+
+                    <!--======Education SECTION======-->
+                    <section id="education" class="skills-content">
+                        <div class="education tab-rows" >
+                            <h4 class="text-center"> Education</h4>
+                            <div class="row">
+                                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+                                    <img src="assets/8adzu.png" alt="Ateneo De Zamboanga University" class="educ_logo">
+            
+                                    <div class="figure-caption text-center link-secondary"> Ateneo De Zamboanga University</div>
+                                    <div class="figure-caption text-center link-secondary"> Bachelor of Computer Science</div>
+                                    <div class="figure-caption text-center link-secondary"> 2001-2005</div>
+
+                                
+                                </div>
+
+                                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+                                    <img src="assets/9swu.png" alt="Western Sydney Universty" class="educ_logo">
+                                    
+                                    <div class="figure-caption text-center link-secondary">Western Sydney Universty</div>
+                                    <div class="figure-caption text-center link-secondary">Master of Business Marketing</div>
+                                    <div class="figure-caption text-center link-secondary">2016-2017</div>
+                                
+                                </div>
+
+                                <div class="col-4 col-md-4 col-lg-4 col-xl-4">
+                                    <img src="assets/10uwa.png" alt="University of Western Australia" class="educ_logo">
+                                    <div class="figure-caption text-center link-secondary">University of Western Australia</div>
+                                    <div class="figure-caption text-center link-secondary">Master of Information Technology</div>
+                                    <div class="figure-caption text-center link-secondary">2020-2022</div>
+                                
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </section>
+                    <!--======END Education SECTION======-->
+
+                    <section id="experience" class="skills-content">
+                        <div class="experience tab-rows" >
+                            <h4 class="text-center"> Experience</h4>
+                            <div class="timeline">
+                                <div class="container-tab left">
+                                <div class="content">
+                                    <h2>Mar 2022 - present</h2>
+                                    <p>DevOps Data Engineer, <br> Education Horizons Ptd.</p>
+                                    <ul>
+                                        <li class="link-secondary">Use scripting and automation tools</li>
+                                        <li class="link-secondary">Utlize PostGreSQL, Powershell, Python, Bash, etc</li>
+                                        <li class="link-secondary">Data Modelling, Database/Warehouse Design</li>
+                                        <li class="link-secondary">Ansible, Puppet, Chef to deploy, configure and manage servers and applications</li>
+                                        <li class="link-secondary">Implement and own the CI, manage CD tooling</li>
+                                        <li class="link-secondary">AWS Lambda, Fargate, SQS, SNS, ECS, RDS, CloudFront, Route53, etc..</li>
+                                    </ul>
+                                    
+                                </div>
+                                </div>
+                                <div class="container-tab right">
+                                <div class="content">
+                                    <h2>Nov 2021 - Feb 2022</h2>
+                                    <p>Data Engineer Intern, <br> Wesfarmers Chemicals, Energy &
+                                        Fertilizers.</p>
+                                    <ul>
+                                        <li class="link-secondary">Creating ETL (Extract-Transform-Load) data pipelines using cloud
+                                            technology such as Microsoft Azure Data Lake, Azure ML Studio, Oracle
+                                            SQL, MS SQL, SSIS/SSMS (SQL Server Management Studio) and Python
+                                            SDK</li>
+                                        <li class="link-secondary">Exposure working with SSIS/SSMS SQL servers</li>
+                                        <li class="link-secondary">Projects include customer history mapping and sales manager mapping on
+                                            legacy systems (ERP System) to provide data to a single customer view by
+                                            aggregating data across multiple source systems</li>
+                                        <li class="link-secondary">Worked with senior data engineers, senior database developers and data
+                                            scientists and domain subject matter experts</li>
+                                        
+                                    </ul>
+                                </div>
+                                </div>
+                                <div class="container-tab left">
+                                    <div class="content">
+                                    <h2>Oct 2009 - Oct 2021</h2>
+                                    <p>Digital Marketing & Analytics Executive/Consultant, <br> Mutiple Companies.</p>
+                                    <ul>
+                                        <li class="link-secondary">Blake E-Learning (Sydney)</li>
+                                        <li class="link-secondary">Allianz Global Assistance (Singapore)</li>
+                                        <li class="link-secondary">Pattern | Software & Technology Consulting (New Zealand)</li>
+                                        <li class="link-secondary">Authorhouse Publishing (Philippines)</li>
+                                    </ul>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--end of experience tab-rows-->
+                    </section>
+                    <!--======END Experience SECTION======-->
+                </div>
+
+                <div class="testimonials-clean"> <!-- Testimonial-->
+                    <div class="container-testimonial">
+                        <div class="intro">
+                            <h2 class="text-center">Recommendations </h2>
+                            <p class="text-center">Read what colleagues of Clariza have to say below.</p>
+                        </div>
+                        <div class="row people">
+                            <div class="col-md-6 col-lg-4 item">
+                                <div class="box">
+                                    <p class="description">I was Clariza's colleague at Blake eLearning and really enjoyed working with her. Clariza is very skilled in SEM – Adwords, Google Analytics, and have great depth of knowledge in technical marketing tools. It was great to work with Clariza, she is very passionate and professional individual. She will be an asset and great value to any company. I recommend Clariza for an employment.</p>
+                                </div>
+                                <div class="author">
+                                    <img class="rounded-circle"  alt="Param" src="assets/param.png">
+                                    <h5 class="name">Param Johnson</h5>
+                                    <p class="title">Marketing Manager at ReUp Education, NYC</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 item">
+                                <div class="box">
+                                    <p class="description">Clariza is in charge of B2C digital marketing for Allianz's travel insurance. She is very helpful and always willing to go the extra mile to complete her task. Clariza is also very self driven, she will go for courses on her own accord to enrich herself. She is a team player and definitely someone you must have in the team!</p>
+                                </div>
+                                <div class="author"><img class="rounded-circle" alt="Patricia" src="assets/patricia_lau.png">
+                                    <h5 class="name">Patricia</h5>
+                                    <p class="title">Project Manager at Allianz, SG</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 item">
+                                <div class="box">
+                                    <p class="description">Clariza worked as one of our media planners at Pattern, working remotely for us on search and social PPC campaigns. She was responsible for both the setup, maintenance and optimization of accounts across a wide range of industries, working both sole-charge and in conjunction with the wider media team depending on the account. Clariza was always available, and always ready to help - a real pleasure to work with. </p>
+                                </div>
+                                <div class="author"><img class="rounded-circle" alt="Rowan" src="assets/rowan-125x125.jpg">
+                                    <h5 class="name">Rowan</h5>
+                                    <p class="title">Owner of Pattern Software Ltd., NZ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End container-testimonial-->
+                </div><!--End Testimonial-->
+
+            </section> <!--===== END ABOUT AUTHOR SECTION===-->
+        
+            <section id="citations">
+               
+                <div class="container-reference gray-bg">
+                    
+                    <div class="row reference"> 
+                        <div class="col-md-12"> <h5>Reference Citations:</h5></div>
+                        <div class="col-md-12">
+                            <b>Java Applets</b>
+                            <ul>
+                                <li>https://www.trendmicro.com/vinfo/us/security/definition/java-applets</li>
+                                <li>https://www.hubberspot.com/2012/04/applet-advantages-and-restrictions.html</li>
+                                <li>https://quick-adviser.com/what-are-the-limitations-of-an-applet/</li>
+                                <li>http://www.cs.toronto.edu/~nn/csc309/handouts/09-Sept30-Applets.pdf</li>
+                                <li>https://www.infoq.com/news/2021/03/end-of-applets/</li>
+                                <li>https://chemaxon.com/news/java-applet-technology-the-past-and-future-and-the-end</li> 
+
+                            </ul>
+
+                            <b>ActionScript</b>
+                            <ul>
+                                <li>https://www.academia.edu/28795966/OReilly_Essential_Action_Script_3_0_Jun</li>
+                                <li>https://ukietech.com/blog/video-and-photo/pros-and-cons-of-macromedia-flash</li>
+                            </ul>
+
+                            <b>Javascript</b>
+                            <ul>
+                                <li>https://www.hackreactor.com/blog/what-is-javascript-used-for</li>
+                                <li>https://data-flair.training/blogs/advantages-disadvantages-javascript/</li>
+                                <li>https://auth0.com/blog/a-brief-history-of-javascript/</li>
+                                <li>https://immagic.com/eLibrary/ARCHIVES/GENERAL/ADTVPATH/A050218G.pdf</li>
+                                <li>https://www.businessinsider.com/most-popular-programming-languages-github-2019-11#</li>
+                                <li>https://www.tutorialspoint.com/ajax/what_is_ajax.htm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> <!-- END row-->
+
+        <footer class="page-footer font-small blue pt-4"><!-- Footer -->
+            <div class="container-fluid text-center text-md-left ">
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 text-dark">© 2022 Copyright:
+                    <a href="#index.html" class="text-dark"> Technologynewsinc.com</a>
+                    <a href="#what-is-cod" class="text-dark">What is COD</a>
+                    <a href="#history-of-cod" class="text-dark">History</a>
+                    <a href="#about-author" class="text-dark">About the Author</a>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+        <!-- Footer -->
+
+        
+    </div> <!-- END OF CONTAINER-->
+    
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close close">&times;</span>
+        <img src="#" id="modal-content" alt="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+
+</body>
+</html>
